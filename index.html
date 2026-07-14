@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0a0a1a">
+<title>ixis — i x PUZZLE</title>
+<meta name="description" content="ixis — 空間認識要素を加えた新感覚パズルゲーム。">
+<style>
+  :root{
+    --ink:#0a0a1a; --surface:#14142b; --tier1:#231d4a;
+    --violet:#7c3aed; --violet400:#8b5cf6; --violet200:#c4b5fd;
+    --gold:#fbbf24;
+    --text:#e7e9f3; --muted:#9aa3bd; --dim:#5c6486;
+    --border:#2a2a4a; --border-bright:#3a3a6a;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; padding:0; color:var(--text);
+    background:
+      radial-gradient(1200px 480px at 50% -160px, rgba(124,58,237,.28), transparent 70%),
+      radial-gradient(800px 400px at 90% 8%, rgba(251,191,36,.06), transparent 60%),
+      var(--ink);
+    background-attachment:fixed;
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.8; font-size:16px;
+    min-height:100vh; display:flex; align-items:center; justify-content:center;
+  }
+  main{max-width:520px; width:100%; margin:0 auto; padding:clamp(32px,6vw,64px) clamp(16px,4.5vw,30px); text-align:center;}
+  .logo{display:inline-flex; align-items:center; gap:16px; margin-bottom:26px;}
+  .blocks{display:grid; grid-template-columns:repeat(3,15px); grid-template-rows:repeat(6,15px); gap:3px;}
+  .b{border-radius:4px;}
+  .b.p{background:var(--violet400); box-shadow:0 0 10px rgba(139,92,246,.5);}
+  .b.g{background:var(--gold); box-shadow:0 0 10px rgba(251,191,36,.35);}
+  .b.d{background:#171a34;}
+  .wordmark{text-align:left; line-height:1.1;}
+  .wordmark .sub{color:var(--violet200); font-size:.75rem; font-weight:700; letter-spacing:.28em; text-transform:uppercase; margin-bottom:3px;}
+  .wordmark .name{color:var(--text); font-size:clamp(2rem,8vw,2.8rem); font-weight:800; letter-spacing:.04em;}
+  .tagline{color:var(--muted); font-size:.98rem; margin:0 auto 34px; max-width:34ch;}
+  .links{display:flex; flex-wrap:wrap; gap:12px; justify-content:center;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:12px 22px; border-radius:14px; font-size:.95rem; font-weight:700;
+    text-decoration:none; border:1px solid var(--border-bright);
+    background:linear-gradient(180deg, rgba(26,26,58,.55), rgba(20,20,43,.55));
+    color:var(--text); box-shadow:0 8px 28px rgba(0,0,0,.35); backdrop-filter:blur(2px);
+    transition:border-color .2s, transform .2s;
+  }
+  .btn:hover{border-color:var(--violet400); transform:translateY(-2px);}
+  .btn .arrow{color:var(--violet200);}
+  footer{margin-top:40px; color:var(--dim); font-size:.8rem;}
+</style>
+</head>
+<body>
+<main>
+  <div class="logo">
+    <div class="blocks" aria-hidden="true">
+      <span class="b p" style="grid-column:2;grid-row:1"></span>
+      <span class="b d" style="grid-column:1;grid-row:2"></span>
+      <span class="b p" style="grid-column:2;grid-row:2"></span>
+      <span class="b d" style="grid-column:3;grid-row:2"></span>
+      <span class="b g" style="grid-column:2;grid-row:3"></span>
+      <span class="b g" style="grid-column:2;grid-row:4"></span>
+      <span class="b g" style="grid-column:2;grid-row:5"></span>
+      <span class="b d" style="grid-column:1;grid-row:6"></span>
+      <span class="b p" style="grid-column:2;grid-row:6"></span>
+      <span class="b d" style="grid-column:3;grid-row:6"></span>
+    </div>
+    <div class="wordmark">
+      <div class="sub">i x PUZZLE</div>
+      <div class="name">ixis</div>
+    </div>
+  </div>
+
+  <p class="tagline">空間認識要素を加えた新感覚パズルゲーム。同じ色は積み上がらず、別次元のブロックとして重なる。</p>
+
+  <nav class="links">
+    <a class="btn" href="support/">サポート <span class="arrow">→</span></a>
+    <a class="btn" href="privacy/">プライバシーポリシー <span class="arrow">→</span></a>
+  </nav>
+
+  <footer>© 2026 yuya Takahashi</footer>
+</main>
+</body>
+</html>
