@@ -126,7 +126,7 @@
       </div>
     </div>
     <h1>プライバシーポリシー</h1>
-    <div class="date">最終更新日: 2026年7月6日</div>
+    <div class="date">最終更新日: 2026年9月14日</div>
   </header>
 
   <div class="card lead">
@@ -140,45 +140,37 @@
 
   <div class="card">
     <h2><span class="n">2</span>収集する情報</h2>
-    <p>本アプリ自体は、氏名・メールアドレス等の個人を直接特定する情報を収集・サーバー送信することはありません。アカウント登録やログイン機能もありません。</p>
-    <p>ただし、下記の第三者サービス（広告配信）が、広告の表示・計測のために一部の情報を自動的に収集します。</p>
+    <p>本アプリは、氏名・メールアドレス等の個人を特定する情報を収集しません。アカウント登録やログイン機能もありません。</p>
+    <p>また、<strong>広告 SDK・アクセス解析 SDK・クラッシュ収集 SDK のいずれも組み込んでいない</strong>ため、利用状況や端末情報が自動的に外部へ送信されることもありません。通信が発生するのは、アプリ内課金の処理（App Store / Google Play）と、利用者がリンクをタップしてブラウザでページを開いた場合のみです。</p>
+    <p>この内容は、App Store の「App のプライバシー」および Google Play の「データ セーフティ」における <strong>「データを収集しません」</strong> という申告と一致しています。</p>
   </div>
 
   <div class="card">
-    <h2><span class="n">3</span>広告配信（Google AdMob）の利用</h2>
-    <p>本アプリは、広告配信のために Google LLC が提供する <strong>Google AdMob</strong> を利用しています。AdMob は広告の配信・表示回数の計測・不正防止・（同意がある場合）広告の最適化のために、次のような情報を自動的に取得することがあります。</p>
-    <table>
-      <tr><th>区分</th><th>内容の例</th></tr>
-      <tr><td>広告識別子</td><td>IDFA（iOS）／広告 ID（Android）</td></tr>
-      <tr><td>端末情報</td><td>端末モデル、OS バージョン、言語、IP アドレス（おおよその地域の推定に利用され得ます）</td></tr>
-      <tr><td>使用状況</td><td>広告の表示・タップ等の操作、アプリ内での広告関連イベント</td></tr>
-      <tr><td>診断情報</td><td>クラッシュや動作に関する技術情報</td></tr>
-    </table>
-    <p>Google がデータをどのように使用するかについては、以下をご確認ください。</p>
-    <ul>
-      <li>Google プライバシーポリシー: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
-      <li>Google のサービス利用時のデータ使用: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></li>
-    </ul>
+    <h2><span class="n">3</span>広告について</h2>
+    <p>本アプリは<strong>広告を表示しません</strong>。バナー広告・全画面広告・リワード動画広告のいずれも提供していません。</p>
+    <p>バージョン <strong>1.2.0</strong>（2026 年 9 月）で、それ以前に利用していた広告配信サービス <strong>Google AdMob</strong> を関連 SDK ごと完全に撤去しました。これに伴い、広告配信を目的として第三者へ情報が提供されることはなくなりました。</p>
+    <p>1.1.3 以前のバージョンでは Google AdMob による広告配信を行っており、広告識別子・端末情報・広告の表示やタップ等の情報が Google により取得されていました。最新バージョンへ更新すると、これらの取得は行われません。過去に取得された情報の取り扱いについては、<a href="https://policies.google.com/privacy">Google プライバシーポリシー</a> および <a href="https://policies.google.com/technologies/partner-sites">Google のサービス利用時のデータ使用</a> をご確認ください。</p>
   </div>
 
   <div class="card">
-    <h2><span class="n">4</span>広告識別子とトラッキング（ATT）</h2>
-    <p>iOS では、Apple の App Tracking Transparency（ATT）に基づき、初回起動時等にトラッキングの許可を求めることがあります。</p>
+    <h2><span class="n">4</span>広告識別子とトラッキング</h2>
+    <p>本アプリは、広告識別子（iOS の IDFA／Android の広告 ID）を<strong>取得も利用もしません</strong>。他社のアプリやサイトを横断して利用者を追跡すること（トラッキング）も行いません。</p>
     <ul>
-      <li>利用者が<strong>許可した場合</strong>、広告識別子（IDFA）を<strong>広告目的（関連性の高い広告の表示・計測）</strong>で利用する場合があります。</li>
-      <li>利用者が<strong>許可しない場合</strong>も広告は表示されますが、パーソナライズ（最適化）は行われません。</li>
-      <li>許可設定は、端末の「設定 &gt; プライバシーとセキュリティ &gt; トラッキング」からいつでも変更できます。</li>
+      <li><strong>iOS</strong>: トラッキングを行わないため、App Tracking Transparency（ATT）の許可ダイアログは<strong>表示されません</strong>。</li>
+      <li><strong>Android</strong>: アプリのマニフェストで広告 ID の権限（AD_ID）を宣言していません。Google Play の「広告 ID」申告も「使用しない」としています。</li>
     </ul>
   </div>
 
   <div class="card">
     <h2><span class="n">5</span>端末内に保存される情報</h2>
-    <p>サウンド設定・表示設定・スコア・ランキング・購入状態・チュートリアル表示済みフラグ等は、利用者の端末内（ローカルストレージ）にのみ保存され、提供者のサーバーへ送信されることはありません。</p>
+    <p>サウンド設定・表示設定・スコア・ランキング・購入状態・HOLD チケットの残数・チュートリアル表示済みフラグ等は、利用者の端末内（ローカルストレージ）にのみ保存され、提供者のサーバーへ送信されることはありません。</p>
+    <p>これらのデータは、アプリを削除すると失われます（購入状態はストアの「購入を復元」で復元できます）。</p>
   </div>
 
   <div class="card">
     <h2><span class="n">6</span>アプリ内課金</h2>
-    <p>本アプリの買い切り課金は、Apple App Store または Google Play を通じて処理されます。決済情報（クレジットカード番号等）は各プラットフォームが取り扱い、本アプリおよび提供者が取得・保持することはありません。</p>
+    <p>本アプリの買い切り課金（「追加 +1 HOLD枠」・¥300・非消耗型）は、Apple App Store または Google Play を通じて処理されます。決済情報（クレジットカード番号等）は各プラットフォームが取り扱い、本アプリおよび提供者が取得・保持することはありません。</p>
+    <p>購入状態は端末内に保存され、購入時と同じ Apple ID / Google アカウントであればアプリ内の「購入を復元」で復元できます。</p>
   </div>
 
   <div class="card">
